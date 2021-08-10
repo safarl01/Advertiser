@@ -1,0 +1,41 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    {{> common/head }}
+
+</head>
+
+<body>
+    {{!-- {{> sections/first-page }} --}}
+    <section class="advertiser">
+        <div class="container">
+            <div class="row">
+
+                {{!-- Menu Left --}}
+                <div class="col-3">
+                    {{> sections/menu-left }}
+                </div>
+
+                {{!-- Menu Center --}}
+                <div class="col-9">
+                    {{> sections/menu-center }}
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- Footer --}}
+    {{> common/footer }}
+
+</body>
+
+</html>
