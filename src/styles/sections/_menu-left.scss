@@ -14,7 +14,17 @@
     transition: $transition;
     z-index: 1044;
     overflow: scroll;
+    box-shadow: none;
     // height: auto;
+
+    @include m-none {
+        padding-top: 79px;
+        transition: all 0.4s ease;
+        animation-fill-mode: none !important;
+        animation: none !important;
+        box-shadow: none;
+        transform: translateX(-270px);
+    }
 
     .menu-left {
         padding-bottom: 20px;
@@ -23,6 +33,10 @@
         // Logo Start
         .logo {
             margin-bottom: 40px;
+
+            @include m-none {
+                display: none !important;
+            }
 
             a {
                 color: $color-two;
@@ -47,6 +61,10 @@
             margin-bottom: 40px;
             margin-left: -5px;
             margin-right: -5px;
+
+            @include m-none {
+                margin-bottom: 20px;
+            }
 
             &::before {
                 font-family: "Font Awesome 5 Free";
@@ -141,16 +159,110 @@
             }
         }
 
+        // Public Category End
+
+        // Social Network icons
+        .advertise-social {
+            margin-right: -10px;
+
+            a {
+                margin-right: 5px;
+                margin-bottom: 5px;
+                display: inline-block;
+
+                img {
+                    width: 24px;
+                }
+            }
+        }
+
+        // Social Network icons End
+
+        .under-menu-sidebar-wrapper {
+            margin-top: 40px;
+
+            .widget {
+                margin-bottom: 0px;
+
+                a {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+
+                    }
+                }
+            }
+        }
+
     }
 
     &::-webkit-scrollbar {
         top: 0px;
-        height: 144px;
+        height: 100%;
         width: 8px;
     }
 
     &::-webkit-scrollbar-thumb {
         background: #aaa;
         border-radius: 10px;
+    }
+}
+
+.menu-toggler-w {
+    display: none !important;
+    background-color: #fff;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    box-shadow: 0px 0px 10px 0px;
+
+    @include m-none {
+        display: flex !important;
+    }
+
+    .menu-toggler {
+        float: none;
+        display: inline-block;
+        color: $color-three;
+
+        i {
+            font-size: 24px;
+            float: left;
+            display: block;
+            line-height: 1;
+        }
+    }
+
+    .logo {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+            height: 25px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .search-icon {
+        a {
+            display: inline-block;
+            color: $color-three;
+
+            i {
+                font-size: 24px;
+                float: left;
+                display: block;
+                line-height: 1;
+            }
+        }
     }
 }

@@ -11,7 +11,8 @@
         {{!-- Search --}}
         <form method="get" class="search-form" action="#" autocomplete="off">
             <div class="search-side">
-                <input type="search" autocomplete="off" class="search-field" placeholder="Search" value="" name="s" title="Search for:">
+                <input type="search" autocomplete="off" class="search-field" placeholder="Search" value="" name="s"
+                    title="Search for:">
             </div>
         </form>
 
@@ -25,7 +26,7 @@
                             Layouts
                         </a>
 
-                        {{> common/category-item-1 }}
+                        {{> common/category-item/category-item-1 }}
                     </li>
 
                     <li class="menu-item">
@@ -33,7 +34,7 @@
                             Colors
                         </a>
 
-                        {{> common/category-item-1 }}
+                        {{> common/category-item/category-item-2 }}
                     </li>
 
                     <li class="menu-item">
@@ -41,7 +42,7 @@
                             Pagination
                         </a>
 
-                        {{> common/category-item-1 }}
+                        {{> common/category-item/category-item-3 }}
                     </li>
 
                     <li class="menu-item">
@@ -49,7 +50,7 @@
                             Menu & Sidebar
                         </a>
 
-                        {{> common/category-item-1 }}
+                        {{> common/category-item/category-item-4 }}
                     </li>
 
                     <li class="menu-item">
@@ -57,7 +58,7 @@
                             Post Types
                         </a>
 
-                        {{> common/category-item-1 }}
+                        {{> common/category-item/category-item-5 }}
                     </li>
 
                     <li class="menu-item">
@@ -65,7 +66,7 @@
                             Pages
                         </a>
 
-                        {{> common/category-item-1 }}
+                        {{> common/category-item/category-item-6 }}
                     </li>
 
                     <li class="menu-item">
@@ -73,7 +74,7 @@
                             User Features
                         </a>
 
-                        {{> common/category-item-1 }}
+                        {{> common/category-item/category-item-7 }}
                     </li>
 
                 </ul>
@@ -81,7 +82,57 @@
             </div>
         </div>
 
-        
+
+        {{!-- Social Network icons --}}
+        <div class="advertise-social ">
+
+            <a href="#">
+                <img src="/src/static/assets/facebook.png" alt="facebook">
+            </a>
+
+            <a href="#">
+                <img src="/src/static/assets/Instagram.png" alt="instagram">
+            </a>
+
+            <a href="#">
+                <img src="/src/static/assets/Pinterest.png" alt="pinterest">
+            </a>
+
+            <a href="#">
+                <img src="/src/static/assets/Twitter.png" alt="twitter">
+            </a>
+
+        </div>
+
+        {{!-- Under Advertise Side --}}
+        <div class="under-menu-sidebar-wrapper">
+            <aside class="widget">
+
+                <a href="#">
+                    <img src="http://pluto.pinsupreme.com/wp-content/uploads/2017/12/magic-sidebar.jpg" alt="advertise">
+                </a>
+
+            </aside>
+        </div>
 
     </div>
+</div>
+
+{{!-- Menu Toggler --}}
+<div class="menu-toggler-w d-flex justify-content-center align-items-center text-center">
+
+    <a href="#" class="menu-toggler">
+        <i class="fas fa-bars"></i>
+    </a>
+
+    <a href="#" class="logo">
+        <img src="/src/static/assets/logo-light.png" alt="logo">
+    </a>
+
+    <div class="search-icon">
+        <a href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+
 </div>
